@@ -139,6 +139,6 @@ function isLoggedIn(req, res, next) {
   res.redirect("login");
 }
 
-app.listen(process.env.PORT, function() {
+app.listen(9000, function() {
   console.log("server is on");
 });
