@@ -1,0 +1,47 @@
+.header{
+	background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+}
+.name{
+	background: #114357;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+}
+.search{
+	background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+input[type=text] {
+	text-align: center;
+    width: 500px;
+    margin: 5px 330px;
+    color-rendering: 5px;
+}
+.left{
+	margin-top: 50px;
+}
+.ss{
+	height: 200px;
+}
+
+img {
+	width: 100%;
+}
+.foot{
+	background-color: black;
+
+}
+.foot h3{
+	color: white;
+}

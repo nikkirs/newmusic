@@ -1,0 +1,49 @@
+<% include partials/header %>
+	<div class="jumbotron header" style="height:500px;margin-top:0">
+    <div style="color:white"><h1>Where words fail, music speaks.</h1></div>
+     <div style="color:white"><h1>Join NikMusik now to talk the music language</h1></div>
+		<a class="btn btn-danger" href="/register" >Join NikMusiK</a>
+	</div>
+
+<div class="jumbotron search">
+    <form action="/results" method="get">
+   <input style="margin-left:10px" type="text" name="song" placeholder="Enter What you wanna listen">
+  </form>
+
+  </div>
+<div class="container" style="width:90%;margin:40px auto">
+  <h2 style="text-align:center">Trending Songs</h2>
+    <div class="row text-center" style="display:flex;flex-wrap:wrap">
+      <%for(var i=0;i<5;i++){%>
+
+        <div class="col-lg-2 col-sm-6">
+              <div class="thumbnail">
+                  <a href="<%=data.tracks.track[i].url%>"><img src=" <%=data.tracks.track[i].image[2]['#text']%>"></a>
+                  <div class="caption">
+                    <h6><%=data.tracks.track[i].name%></h6>
+                    <h6>By <%=data.tracks.track[i].artist.name%></h6>
+                  </div>
+              </div>
+            </div>
+            
+
+      <%}%>
+      <div class="col-lg-2 col-sm-6">
+              <div class="thumbnail">
+                  <a href="/all"><img src="https://png2.kisspng.com/20180302/yye/kisspng-microphone-music-icon-vertical-microphone-and-musical-notes-5a99b321ca4487.8444834015200223058285.png" style="width:174px;height:174px"></a>
+                  <div class="caption">
+                    <h6>View All</h6>
+                    
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<% include partials/footer %>

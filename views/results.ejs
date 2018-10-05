@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+	<div class="jumbotron name" style="height:200px">
+			<h1><%=data.results.trackmatches.track[0].name%><h1>
+	</div>
+	<div class="container">
+		<div class="row text-center" style="display:flex;flex-wrap:wrap">
+			<% data.results.trackmatches.track.forEach(function(d){%>
+
+				<div class="col-lg-2 col-sm-6">
+        			<div class="thumbnail">
+        		  		<a href="<%=d.url%>"><img src=" <%=d.image[2]['#text']%>"></a>
+        		  		<div class="caption">
+        		  			<h5><%=d.name%></h5>
+        		  			<h6>By <%=d.artist%></h6>
+        		  		</div>
+        			</div>
+      			</div>
+
+			<%})%>
+    	</div>
+    </div>
+
+
+
+
+<% include partials/footer %>

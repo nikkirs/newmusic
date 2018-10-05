@@ -1,0 +1,21 @@
+<% include partials/header %>
+<div class="container" style="width:90%;margin:40px auto">
+  <h2 style="text-align:center">Trending Songs</h2>
+    <div class="row text-center" style="display:flex;flex-wrap:wrap">
+      <%data.tracks.track.forEach(function(d){%>
+
+        <div class="col-lg-2 col-12 col-md-6 col-sm-6">
+              <div class="thumbnail">
+                  <a href="<%=d.url%>"><img src=" <%=d.image[2]['#text']%>"></a>
+                  <div class="caption">
+                    <h6><%=d.name%></h6>
+                    <h6>By <%=d.artist.name%></h6>
+                  </div>
+              </div>
+            </div>
+            
+
+      <%})%>
+      </div>
+      </div>
+<% include partials/footer %>
